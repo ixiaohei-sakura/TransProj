@@ -10,7 +10,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
 
-project("untitled" C CXX)
+project("ControllerLogic" C CXX)
 
 include(CMakeListsPrivate.txt)
 
@@ -30,4 +30,4 @@ add_custom_target(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_executable(Z_DUMMY_TARGET ${SRC_LIST} src/Button.cpp src/Button.h src/PowerSupply.cpp src/PowerSupply.h src/Display.cpp src/Display.h src/RemoteData.h test/test.cpp)
+add_executable(Z_DUMMY_TARGET ${SRC_LIST})

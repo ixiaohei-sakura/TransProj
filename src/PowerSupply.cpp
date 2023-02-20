@@ -20,7 +20,7 @@ void PowerSupply::setup() const {
 }
 
 double PowerSupply::batVoltage() const {
-    return analogRead(this->bat) * V_RATIO;
+    return analogRead(this->bat) * V_RATIO * 0.86;
 }
 
 double PowerSupply::obVoltage() const {
